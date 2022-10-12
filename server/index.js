@@ -9,21 +9,22 @@ app.use(express.json());
 
 /////////////////////////////////////////////////////////
 
-const { getCompliment } = require('./controller')
+const { getCompliment, getFortune,  } = require('./controller')
 
 app.get("/api/compliment", getCompliment);
 
 //////////////////////////////////////////////////////// 
 
-const { getFortune } = require('./controller')
-
 app.get("/api/fortune", getFortune);
 
 /////////////////////////////////////////////////////////
 
-app.post('/api/location', (req,res) => {
-    console.log(request);
-});
+const { getAlbums, postAlbum, deleteAlbum, editAlbum  } = require('./controller')
+
+app.get("/api/albums", getAlbums)
+app.post("/api/albums", postAlbum)
+app.delete("/api/albums/:id", deleteAlbum)
+app.put("/api/albums/:id", editAlbum)
 
 /////////////////////////////////////////////////////////
 

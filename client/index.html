@@ -8,14 +8,26 @@
 
     <button id="fortuneButton">Get a fortune</button>
 
-    <div class="musicDiv">
-      
-      <form class="submit">
-        <input type="text" id="submitText" placeholder= "location here" class="submit-input">
-        <input type="submit" id="submitBtn" value="Submit">
+    <div>
+      <button id="albumsButton">Show me some Kendrick albums.</button>
+    </div>
+
+    <div>
+
+      <form id="postButton">Post an album, nerd!
+        <input id= "postID" type="text">
+        <input id= "postName" type="text">
+        <button>submit</button>
+      </form>
+    </div>
+
+    <div>
+      <form id="delete">
+        <input id= "deleteID" type="text">
+        <!-- <input id= "albumToDelete" type="text"> -->
+        <button id="deleteButton">input id, then click this to delete</button>
     </form>
-    
-  </div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
